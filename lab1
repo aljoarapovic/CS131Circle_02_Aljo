@@ -1,0 +1,55 @@
+class Circle
+{
+    public static void main(String[] args);
+	private double radius;
+
+
+	Circle()
+	{
+		this.radius=1;
+	}
+
+	Circle(int r)
+	{
+		this.radius=r;
+	}
+	
+	public void setradius(int x)
+	{
+		this.radius=x;
+	}
+
+	public double getradius()
+	{
+		return this.radius;
+	}
+
+
+	double calculateArea()
+	{
+		double r=this.radius;
+		return 3.14*r*r;
+	}
+
+
+	public String toString()
+	{
+		double r=this.radius;
+		return r + " ";
+ 	} 
+}
+
+
+
+class Application
+{
+
+	public static void main(String args[])
+	{
+		Circle c=new Circle(3);
+
+		double area = c.calculateArea();
+
+		System.out.println("The area of circle is = " +  area);
+	}
+}
